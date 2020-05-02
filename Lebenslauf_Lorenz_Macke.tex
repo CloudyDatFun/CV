@@ -1,0 +1,154 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES UND KONFIGURATION
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME UND KONTAKTINFORMATIONEN
+%----------------------------------------------------------------------------------------
+
+\firstname{Lorenz}
+\familyname{Macke}
+
+% Fußzeile
+\title{Lebenslauf}
+\address{Hüttenberg 2}{Bad Gandersheim, Niedersachsen}
+\mobile{+49 173 5684869}
+\email{lorenz@macke-it.de}
+\homepage{www.macke-it.de}{www.macke-it.de}
+\photo[120pt][0.4pt]{pictures/picture} 
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	ANSCHREIBEN
+%----------------------------------------------------------------------------------------
+
+\clearpage
+
+\recipient{Herr/Frau irgendwas}{Firma\\123 Straße\\12345 Stadt} % TODO: Ändern
+\date{\today}
+\opening{\textcolor{red}{Sehr geehrter Herr, /Sehr geehrte Frau}} % TODO: Ändern
+\closing{Mit freundlichen Grüßen,}
+\enclosure[Anhang]{Lebenslauf{}}
+
+\makelettertitle
+
+\lipsum[1-2] % Lorem ipsum
+\lipsum[4] % Lorem ipsum
+
+\makeletterclosing
+
+\newpage
+
+%----------------------------------------------------------------------------------------
+%	LEBENSLAUF
+%----------------------------------------------------------------------------------------
+
+\makecvtitle
+
+%----------------------------------------------------------------------------------------
+%	BILDUNG
+%----------------------------------------------------------------------------------------
+
+\section{Bildung}
+
+\cventry{2017--2020}{Bachelor of Science}{FHDW - Fachhochschule für die Wirtschaft}{Hannover}{}{Duales Studium - Informatik}
+\cventry{2010--2017}{Abitur}{Roswitha-Gymnasium}{Bad Gandersheim}{}{}
+
+\section{Bachelorarbeit}
+
+\cvitem{Titel}{\emph{Refaktorisierung einer Legacy-Anwendung mit Blazor und .NET-Core 3.2}}
+\cvitem{Beschreibung}{Die Bachelorarbeit befasst sich mit der Umstellung eines bestehenden Altsystems, realisiert in Angular, auf das moderne Front-End-Framework "Blazor". Das Backend wurde von .Net 4.5 auf .Net-Core in der aktuellsten Version umgestellt.}
+
+%----------------------------------------------------------------------------------------
+%	ARBEITSERFAHRUNG
+%----------------------------------------------------------------------------------------
+
+\section{Erfahrung}
+
+%------------------------------------------------
+
+\cventry{2020--Jetzt}{Junior Software-Entwickler für .Net}{\textsc{KWS SAAT SE \& Co. KGaA}}{Einbeck}{}{Weiterentwicklung und Maintanance eines Lagacy-Systems zur Analyse und Verwaltung von genetischen Markern.}
+%------------------------------------------------
+
+\cventry{2017--2020}{Dualer Student - Informatik}{\textsc{KWS SAAT SE \& Co. KGaA}}{Einbeck}{}{Dualer Student in der Abteilung "Research \& Development - Data Management". Praxis- und Theoriephasen jeweils drei Monate im Wechsel.
+\newline{}
+In den Praxisphasen fand eine vollständige Integrierung in den SCRUM-basierten Entwicklungsprozess statt.}
+
+%------------------------------------------------
+
+\cventry{2016}{Freiwilliges Praktikum}{\textsc{KWS SAAT SE \& Co. KGaA}}{Einbeck}{}{}
+
+%------------------------------------------------
+
+\cventry{2015}{Schulisches Pflichtpraktikum}{\textsc{KWS SAAT SE \& Co. KGaA}}{Einbeck}{}{}
+
+%------------------------------------------------
+
+\subsection{Weiteres}
+
+\cventry{2020}{Realisierung eines Onlineshops}{MackeIT}{Bad Gandersheim}{}{Auf Anfrage eines Freundes wurde ein Onlineshop mit ASP.Net Core auf einem Linux-System entwickelt und anschließend realisiert.}
+
+\cventry{2015--2020}{Konzeptionierung von IT-Systemen}{MackeIT}{Bad Gandersheim}{}{Verschiedene IT-Systeme wurden konzeptioniert und anschließend in Betrieb genommen.}
+
+%----------------------------------------------------------------------------------------
+%	TECHNISCHE KENNTNISSE
+%----------------------------------------------------------------------------------------
+
+\section{Technische Kenntnisse}
+
+\cvitem{Grundlagen}{Angular, \LaTeX, Python}
+\cvitem{Gute Kenntnisse}{Blazor, HTML, Microsoft Office, Linux, Microsoft Windows, Java, GIT, Hardware}
+\cvitem{Sehr gute Kenntnisse}{C\# mit .Net(-Core) und ASP.Net(-Core), SCRUM}
+
+%----------------------------------------------------------------------------------------
+%	SPRACHEN
+%----------------------------------------------------------------------------------------
+
+\section{Sprachen}
+
+\cvitemwithcomment{Deutsch}{Muttersprache}{}
+\cvitemwithcomment{Englisch}{Sehr gut}{Cambridge Zertifikat (B2)}
+
+%----------------------------------------------------------------------------------------
+%	SOZIALES
+%----------------------------------------------------------------------------------------
+
+\section{Soziales}
+
+\cventry{2019--Jetzt}{Werkfeuerwehr der KWS}{}{}{}{}
+
+\cventry{2019--Jetzt}{Freiwillige Feuerwehr Harzbörde}{}{}{}{}
+
+\cventry{2019--Jetzt}{Gründungsmitglied und Vorstand eines Vereins}{}{}{}{Zur Förderung des Zusammenhaltes der Jugend im Stadtgebiet Bad Gandersheim wurde ein nicht eingetragener Verein gegündet, welcher regelmäßige Veranstaltungen anbietet.}
+
+\cventry{2018--Jetzt}{Freiwillige Feuerwehr Clus}{}{}{}{\begin{itemize}
+    \item Geplant: Lehrgang Truppführer, Lehrgang Maschinist
+    \item Lehrgang Truppmann Teil 2
+    \item Lehrgang Atemschutzgeräteträger
+    \item Lehrgang Sprechfunker
+    \item Lehrgang Truppmann Teil 1
+\end{itemize}}
+
+\cventry{2012--2017}{Hammerwerfer des Landeskaders Niedersachsen}{}{}{}{\begin{itemize}
+    \item Norddeutscher Meister U20
+    \item Mehrfacher Vize-Landesmeister U18
+    \item Mehrfache Teilnahme an deutschen Meisterschaften
+\end{itemize}}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
